@@ -16,8 +16,8 @@ vim.keymap.set('n', '<leader>2', ':split<ESC>')
 
 
 --HPE Copyright
-vim.keymap.set('n', '<leader>pr', '<CR> :norm i//Copyright 2024 Hewlett Packard Enterprise Development LP<ESC>')
-vim.keymap.set('v', '<leader>pr', '<CR> :norm i//Copyright 2024 Hewlett Packard Enterprise Development LP<ESC>')
+vim.keymap.set('n', '<leader>pr', '<CR> :norm i//CPY P<ESC>')
+vim.keymap.set('v', '<leader>pr', '<CR> :norm i//CPY <ESC>')
 
 local opts = { noremap = true, silent = true }
 -- Normal-mode commands
