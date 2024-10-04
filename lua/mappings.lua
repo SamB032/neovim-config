@@ -13,10 +13,6 @@ vim.keymap.set("v", "<C-m>", ":NvimTreeFocus<CR>", opts)
 -- Disable copy on cut
 vim.keymap.set("n", "x", '"_x')
 
---HPE Copyright
-vim.keymap.set('n', '<leader>pr', '<CR> gg 0 :norm i//Copyright 2024 Hewlett Packard Enterprise Development LP<CR><ESC>')
-vim.keymap.set('v', '<leader>pr', '<CR> gg 0 :norm i//Copyright 2024 Hewlett Packard Enterprise Development LP<CR><ESC>')
-
 -- Visual-mode commands:
 vim.keymap.set('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
 vim.keymap.set('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
