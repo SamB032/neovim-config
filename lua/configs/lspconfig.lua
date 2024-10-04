@@ -4,7 +4,7 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "gopls", "pyright"}
+local servers = { "html", "cssls", "gopls", "pyright", "helm_ls", "yamlls"}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -50,4 +50,31 @@ lspconfig.pyright.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"python"}
+})
+
+lspconfig.helm_ls.setup({
+  settings = {
+    ['helm-ls'] = {
+      logLevel = "info",
+      valuesFiles = {
+        mainValuesFile = "values.yaml",
+        lintOverlayValuesFile = "values.lint.yaml",
+        additionalValuesFilesGlobPattern = "values*.yaml",
+      },
+      yamlls = {
+        enabled = true,
+        enabledForFilesGlob = "*.{yaml,yml}",
+        diagnosticsLimit = 50,
+        showDiagnosticsDirectly = false,
+        path = "yaml-language-server",
+        config = {
+          schemas = { 
+            kubernetes = "templates/**", 
+          },
+          completion = true,
+          hover = true,
+        }
+      }
+    }
+  }
 })

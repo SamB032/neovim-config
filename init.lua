@@ -37,27 +37,6 @@ vim.schedule(function()
   require "mappings"
 end)
 
-require('move').setup({
-	line = {
-		enable = true, -- Enables line movement
-	},
-	block = {
-		enable = true, -- Enables block movement
-	},
-	word = {
-		enable = true, -- Enables word movement
-	},
-	char = {
-		enable = false -- Enables char movement
-	}
-})
-
-
-
-function comment_out()
-  vim.api.nvim_command("s:^:#:")
-  vim.api.nvim_command("noh")
-end
 
 vim.opt.shell = "powershell.exe"
 
@@ -97,4 +76,3 @@ require('guess-indent').setup {
     ["shiftwidth"] = "detected",
   },
 }
-

@@ -24,9 +24,6 @@ return {
   },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   {
-    'fedepujol/move.nvim',
-  },
-  {
     "neovim/nvim-lspconfig",
     config = function()
       require("nvchad.configs.lspconfig").defaults()
