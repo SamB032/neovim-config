@@ -91,7 +91,7 @@ require('guess-indent').setup {
 -- Toggle Term
 require("toggleterm").setup{
   size = 25,
-  open_mapping = [[<C-t>]],  -- This will map Ctrl++ to toggle the terminal
+  open_mapping = [[<C-t>]],  -- This will map Ctrl+t to toggle the terminal
   hide_numbers = true,
   shade_filetypes = {},
   shade_terminals = true,
