@@ -103,4 +103,9 @@ return {
         { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
   },
+  { 
+    'akinsho/toggleterm.nvim', 
+    version = "*", 
+    config = true 
+  },
 }
