@@ -3,9 +3,6 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- Open command mode
-map("n", ";", ":", { desc = "CMD enter command mode" })
-
 -- Tree sitter
 vim.keymap.set("n","<C-m>", ":NvimTreeFocus<CR>", opts)
 vim.keymap.set("v", "<C-m>", ":NvimTreeFocus<CR>", opts)
