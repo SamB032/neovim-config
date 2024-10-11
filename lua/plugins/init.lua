@@ -1,15 +1,16 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
-    config = function()
-      require "configs.conform"
-    end,
-  },
-
+  -- {
+  --   "stevearc/conform.nvim",
+  --   -- event = 'BufWritePre', -- uncomment for format on save
+  --   config = function()
+  --     require "configs.conform"
+  --   end,
+  -- },
   {
     "folke/trouble.nvim",
-    dependencies = {"nvim-tree/nvim-web-devicons"}
+    dependencies = {
+      "nvim-tree/nvim-web-devicons"
+    }
   },
   {
     "williamboman/mason.nvim",
@@ -60,7 +61,7 @@ return {
         "<leader>xX",
         "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
         desc = "Buffer Diagnostics (Trouble)",
-      },
+     },
       {
         "<leader>cs",
         "<cmd>Trouble symbols toggle focus=false<cr>",

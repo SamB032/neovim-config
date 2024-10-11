@@ -39,8 +39,8 @@ end)
 
 -- Powershell config settings
 local powershell_options = {
-  shell = "powershell.exe",
-  shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+  shell = "powershell.exe -nologo",
+  shellcmdflag = "-ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
   shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
   shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
   shellquote = "",
