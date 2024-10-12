@@ -10,12 +10,6 @@ vim.keymap.set("v", "<C-m>", ":NvimTreeFocus<CR>", opts)
 -- Disable copy on cut
 vim.keymap.set("n", "x", '"_x')
 
--- Visual-mode commands:
-vim.keymap.set('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
-vim.keymap.set('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
-vim.keymap.set('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
-vim.keymap.set('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
-
 -- Disable arrow keys
 for _, mode in pairs({ 'n', 'i', 'v', 'x' }) do
     for _, key in pairs({ '<Up>', '<Down>', '<Left>', '<Right>' }) do
