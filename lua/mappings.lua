@@ -11,7 +11,7 @@ vim.keymap.set("n", "x", '"_x')
 
 -- Disable arrow keys and tab key
 for _, mode in pairs({ 'n', 'i', 'v', 'x' }) do
-    for _, key in pairs({ '<Up>', '<Down>', '<Left>', '<Right>', '<Tab>' }) do
+    for _, key in pairs({ '<Up>', '<Down>', '<Left>', '<Right>' }) do
         vim.keymap.set(mode, key, '<nop>')
     end
 end

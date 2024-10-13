@@ -5,11 +5,13 @@
 local M = {}
 
 M.ui = {
-	theme = "doomchad",
-
-	tabufline = {
+  tabufline = {
 		enabled= false
 	}
+}
+
+M.base46 = {
+	theme = "doomchad",
 
 	-- hl_override = {
 		-- Comment = { italic = true },
