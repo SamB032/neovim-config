@@ -1,6 +1,5 @@
 require "nvchad.mappings"
 
-local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- Tree sitter
@@ -10,9 +9,9 @@ vim.keymap.set("v", "<C-m>", ":NvimTreeFocus<CR>", opts)
 -- Disable copy on cut
 vim.keymap.set("n", "x", '"_x')
 
--- Disable arrow keys
+-- Disable arrow keys and tab key
 for _, mode in pairs({ 'n', 'i', 'v', 'x' }) do
-    for _, key in pairs({ '<Up>', '<Down>', '<Left>', '<Right>' }) do
+    for _, key in pairs({ '<Up>', '<Down>', '<Left>', '<Right>', '<Tab>' }) do
         vim.keymap.set(mode, key, '<nop>')
     end
 end
