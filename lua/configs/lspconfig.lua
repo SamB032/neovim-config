@@ -69,8 +69,8 @@ lspconfig.helm_ls.setup({
         showDiagnosticsDirectly = false,
         path = "yaml-language-server",
         config = {
-          schemas = { 
-            kubernetes = "templates/**", 
+          schemas = {
+            kubernetes = "templates/**",
           },
           completion = true,
           hover = true,
