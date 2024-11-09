@@ -50,7 +50,6 @@ for option, value in pairs(powershell_options) do
   vim.opt[option] = value
 end
 
-
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
@@ -95,7 +94,7 @@ require("toggleterm").setup{
   shade_filetypes = {},
   shade_terminals = true,
   shading_factor = 2,
-  start_in_insert = true, 
+  start_in_insert = true,
   insert_mappings = true,
   persist_size = true,
   direction = "float",
