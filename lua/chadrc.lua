@@ -6,8 +6,8 @@ local M = {}
 
 M.ui = {
   tabufline = {
-		enabled= false
-	}
+		enabled = false
+	},
 }
 
 M.base46 = {
@@ -17,6 +17,10 @@ M.base46 = {
 		-- Comment = { italic = true },
 		-- ["@comment"] = { italic = true },
 	-- },
+}
+
+M.nvdash = {
+	load_on_startup = true,
 }
 
 return M
