@@ -11,7 +11,7 @@ M.ui = {
 }
 
 M.base46 = {
-	theme = "doomchad",
+	theme = "catpuccin-macchiato",
 
 	-- hl_override = {
 		-- Comment = { italic = true },
